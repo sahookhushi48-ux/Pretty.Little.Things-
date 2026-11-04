@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="She knows — your little corner for funny games, Pinterest-inspired pictures and cute captions.">
+  <title>She knows 🌸🌙 | Pretty things & silly games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">♡ a little corner of the internet made just for you ♡</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="She knows home">she knows<span>🌸🌙</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#games">Games</a><a href="#pins">Pinterest</a><a href="#captions">Captions</a><a href="#mood">Mood</a>
+    </nav>
+    <a class="header-cta" href="#games">Let's play ♡</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">✿ YOUR DAILY DOSE OF CUTE ✿</span>
+        <h1>Pretty things,<br><em>silly games</em> &<br>a little bit of chaos.</h1>
+        <p>Welcome to your happy place — where the vibes are pink, the games are unserious and there's always a caption for that mood.</p>
+        <div class="hero-actions"><a class="button primary" href="#games">Play something 🎀</a><a class="button secondary" href="#pins">Explore the pins ↗</a></div>
+        <div class="tiny-note">made with love, glitter & questionable decisions ♡</div>
+      </div>
+      <div class="hero-art">
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div>
+        <div class="hero-photo photo-one"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=85" alt="Soft pink flowers"><span>little things, big feelings</span></div>
+        <div class="hero-photo photo-two"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=85" alt="Pink blossom"><span>stay soft ♡</span></div>
+        <div class="sticker">XOXO<br>♡</div>
+      </div>
+    </section>
+
+    <section class="quote-strip"><span>☾</span><p id="dailyQuote">"Be your own kind of pretty."</p><span>✿</span></section>
+
+    <section class="section" id="games">
+      <div class="section-heading"><span class="eyebrow">THE FUN CORNER</span><h2>Let's play, bestie <em>🎮</em></h2><p>Zero seriousness allowed. Choose your chaos.</p></div>
+      <div class="game-grid">
+        <article class="game-card game-pink"><div class="game-icon">💌</div><h3>Truth or Dare</h3><p>How brave are you feeling today?</p><button class="button small" data-game="truth">Play now ↗</button></article>
+        <article class="game-card game-lilac"><div class="game-icon">🤔</div><h3>Would You Rather?</h3><p>Two choices. One very difficult decision.</p><button class="button small" data-game="rather">Play now ↗</button></article>
+        <article class="game-card game-peach"><div class="game-icon">🔮</div><h3>Guess the Emoji</h3><p>Decode the emojis before your bestie does.</p><button class="button small" data-game="emoji">Play now ↗</button></article>
+        <article class="game-card game-yellow"><div class="game-icon">👯‍♀️</div><h3>Bestie Quiz</h3><p>Find out how well you know each other.</p><button class="button small" data-game="bestie">Play now ↗</button></article>
+      </div>
+      <div class="game-playground" id="gamePlayground" aria-live="polite">
+        <div class="playground-top"><span>✿ GAME TIME</span><button id="closeGame" aria-label="Close game">×</button></div>
+        <h3 id="gameTitle">Pick a game above!</h3><p id="gamePrompt">Your next favourite distraction is waiting.</p>
+        <div id="gameAnswer" class="game-answer"></div>
+        <div class="playground-actions"><button class="button primary" id="gameAction">Surprise me ✨</button><button class="button secondary hidden" id="gameNext">Next one ↗</button></div>
+      </div>
+    </section>
+
+    <section class="pins-section" id="pins">
+      <div class="section section-heading"><span class="eyebrow">SAVE YOUR FAVOURITE VIBES</span><h2>A little Pinterest <em>paradise 📌</em></h2><p>Pretty inspiration for your camera roll and your moodboard.</p>
+        <div class="filter-row" id="pinFilters"><button class="filter active" data-filter="all">All pins</button><button class="filter" data-filter="flowers">Flowers</button><button class="filter" data-filter="aesthetic">Aesthetic</button><button class="filter" data-filter="love">Love</button><button class="filter" data-filter="dreamy">Dreamy</button></div>
+      </div>
+      <div class="pin-grid" id="pinGrid">
+        <article class="pin" data-category="flowers"><img loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=650&q=85" alt="Pink flowers"><div class="pin-info"><strong>Stop and smell the flowers 🌷</strong><button class="copy-btn" data-copy="Stop and smell the flowers 🌷">Copy</button></div></article>
+        <article class="pin" data-category="aesthetic"><img loading="lazy" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=650&q=85" alt="Cozy desk aesthetic"><div class="pin-info"><strong>Slow mornings & soft dreams</strong><button class="copy-btn" data-copy="Slow mornings & soft dreams ♡">Copy</button></div></article>
+        <article class="pin" data-category="love"><img loading="lazy" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=650&q=85" alt="Romantic couple"><div class="pin-info"><strong>Somewhere, with you ♡</strong><button class="copy-btn" data-copy="Somewhere, with you ♡">Copy</button></div></article>
+        <article class="pin" data-category="dreamy"><img loading="lazy" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=650&q=85" alt="Dreamy sunrise"><div class="pin-info"><strong>Chasing golden hours</strong><button class="copy-btn" data-copy="Chasing golden hours ✨">Copy</button></div></article>
+        <article class="pin" data-category="flowers"><img loading="lazy" src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=650&q=85" alt="Bouquet of flowers"><div class="pin-info"><strong>Flowers are always a good idea</strong><button class="copy-btn" data-copy="Flowers are always a good idea 🌸">Copy</button></div></article>
+        <article class="pin" data-category="aesthetic"><img loading="lazy" src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=650&q=85" alt="Cozy pink room"><div class="pin-info"><strong>My kind of cozy</strong><button class="copy-btn" data-copy="My kind of cozy ☁️">Copy</button></div></article>
+        <article class="pin" data-category="dreamy"><img loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=650&q=85" alt="Dreamy landscape"><div class="pin-info"><strong>Somewhere I'd rather be</strong><button class="copy-btn" data-copy="Somewhere I'd rather be 🌙">Copy</button></div></article>
+        <article class="pin" data-category="love"><img loading="lazy" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=650&q=85" alt="Romantic flowers"><div class="pin-info"><strong>Love looks good on you</strong><button class="copy-btn" data-copy="Love looks good on you 💗">Copy</button></div></article>
+      </div>
+      <p class="image-note">Photos load from Unsplash. Add your own images by replacing the image URLs in <code>index.html</code>.</p>
+    </section>
+
+    <section class="section captions-section" id="captions">
+      <div class="section-heading"><span class="eyebrow">WORDS FOR EVERY MOOD</span><h2>Caption, please <em>✨</em></h2><p>Because sometimes the picture is ready but the caption isn't.</p></div>
+      <div class="caption-toolbar"><div class="caption-tabs" id="captionTabs"><button class="tab active" data-caption="attitude">Attitude</button><button class="tab" data-caption="funny">Funny</button><button class="tab" data-caption="love">Love</button><button class="tab" data-caption="sad">Sad</button><button class="tab" data-caption="bestie">Bestie</button></div><button class="button primary" id="randomCaption">Surprise me ♡</button></div>
+      <div class="caption-card"><span class="quote-mark">“</span><p id="captionText">Not everyone likes me, but not everyone matters.</p><button class="button small" id="copyCaption">Copy caption ⧉</button></div>
+    </section>
+
+    <section class="mood-section" id="mood">
+      <div class="mood-inner"><div><span class="eyebrow">CHECK IN WITH YOURSELF</span><h2>What's your vibe <em>today?</em></h2><p>Tap the button and let the universe (well, our random generator) decide.</p><button class="button primary" id="moodButton">Read my mood ✨</button></div><div class="mood-result" id="moodResult"><span>🌷</span><strong>Your vibe goes here</strong><small>Go on, tap the button!</small></div></div>
+    </section>
+
+    <section class="newsletter section"><div class="newsletter-flower">♡</div><span class="eyebrow">A LITTLE REMINDER</span><h2>You are the <em>main character.</em></h2><p>Drink water, take the picture, send the text (or don't). You're doing fine, bestie.</p><a class="button primary" href="#home">Back to the top ↑</a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home">she knows<span>🌸🌙</span></a><p>Made with ♡, pink pixels & a little chaos.</p><small>© <span id="year"></span> She knows. Stay cute, stay kind.</small></footer>
+  <div class="toast" id="toast" role="status">Copied! ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
